@@ -1,0 +1,6 @@
+nodejs
+bluetooth
+bluez
+libbluetooth-dev
+libudev-dev
+libcap2-bin

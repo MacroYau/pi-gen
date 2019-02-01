@@ -1,0 +1,12 @@
+[Unit]
+Description=Blue Raspberry headless pairing service
+After=network.target bluetooth.service
+PartOf=bluetooth.service
+
+[Service]
+WorkingDirectory=/usr/share/blue-raspberry
+ExecStart=/usr/bin/node app.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
